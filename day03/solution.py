@@ -63,6 +63,7 @@ def get_pos(num: int):
 
  
 def part2(max_x):
+    # TODO: brute force 
     max_x = int(max_x)
     N = 500  # should be large enough
     cen = N // 2
