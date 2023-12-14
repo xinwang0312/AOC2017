@@ -3,6 +3,7 @@ import itertools
 import os
 import re
 from collections import defaultdict, Counter
+from pprint import pprint
 
 
 def part1(input_file):
