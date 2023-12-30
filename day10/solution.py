@@ -65,9 +65,7 @@ def part2(input_file):
     dense_hash = []
     for i in range(16):
         xor = reduce(lambda x, y: x ^ y, sparse_hash[i * 16: (i + 1) * 16])
-        # dense_hash.append(f"{int(hex(xor)[2:]):02d}")
-        str_xor = hex(xor).replace('0x', '') 
-        dense_hash.append(str_xor if len(str_xor) == 2 else '0' + str_xor)
+        dense_hash.append(f"{xor:02x}")
 
     print(dense_hash)
     print("".join(dense_hash))
